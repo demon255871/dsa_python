@@ -24,15 +24,6 @@ def heapify(arr, n, i):
 		heapify(arr, n, largest)
 		
 
-def insertNode(arr, key):
-    global n
-    # Increase the size of Heap by 1
-    n += 1
-    # Insert the element at end of Heap
-    arr.append(key)
-    # Heapify the new node following a
-    # Bottom-up approach
-    heapify(arr, n, n-1)
 
 #Function to delete the root from Heap
 def deleteRoot(arr):
